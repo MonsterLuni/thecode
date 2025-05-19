@@ -1,6 +1,7 @@
 {
-  "name": "thecode",
-  "displayName": "the_code",
+  "name": "thecodehater",
+  "publisher": "MonsterLuni",
+  "displayName": "the_code_hater",
   "description": "Plays the song \"The Code\" From Nemo everytime an error occures",
   "version": "0.0.1",
   "engines": {
@@ -14,10 +15,14 @@
   "contributes": {
     "commands": [
       {
-        "command": "thecode.playSound",
-        "title": "GetNemo"
+        "command": "the_code_hater.playSound",
+        "title": "Hatemycode"
       }
     ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MonsterLuni/thecode"
   },
   "scripts": {
     "lint": "eslint .",

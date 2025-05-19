@@ -11,7 +11,7 @@ const vscode = require('vscode');
  * @param {vscode.ExtensionContext} context
  */
 function activate(context) {
-	const disposable = vscode.commands.registerCommand('thecode.playSound', function () {
+	const disposable = vscode.commands.registerCommand('the_code_hater.playSound', function () {
 		vscode.window.showInformationMessage('Broken Code activated!');
 	});
 
@@ -21,7 +21,8 @@ function activate(context) {
         const hasErrors = diagnostics.some(d => d.severity === vscode.DiagnosticSeverity.Error);
 
 		if(hasErrors){
-			sound.play(path.join(__dirname, "media/Nemo.mp3"))
+			let number = Math.ceil(Math.random() * 6)
+			sound.play(path.join(__dirname, "media/" + number + ".mp3"))
 		}
     });
 
